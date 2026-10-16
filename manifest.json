@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Image Auto Zoomer (Max Size)",
+  "version": "1.5",
+  "description": "最大面積の画像を画面の高さに合わせ、ページ先頭に残るスクロール不具合を修正します。",
+  "content_scripts": [
+    {
+      "matches": [
+        "指定のアドレス"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
